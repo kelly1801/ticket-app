@@ -12,7 +12,7 @@ socket.on("disconnect", () => {
   btnCreate.disabled = true;
 });
 
-socket.emit("last-ticket", null, (lastTicket) => {
+socket.on("last-ticket",  (lastTicket) => {
     newTicketBtn.innerText = `Ticket ${lastTicket}`
   })
 btnCreate.addEventListener("click", () => {
