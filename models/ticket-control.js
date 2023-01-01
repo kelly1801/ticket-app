@@ -58,7 +58,7 @@ export default class TicketControl {
       return null;
     }
 
-    const ticket = this.pendingTickets.shifth(); // this.pendingTicket[0]
+    const ticket = this.pendingTickets.shift(); // this.pendingTicket[0]
 
     ticket.desktop = desktop;
 
